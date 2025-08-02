@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f9fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            background-color: #111;
+            text-align: left;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #f8f9fa;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ccc;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 25px;
+            padding: 25px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section {
+            flex: 2.5;
+        }
+
+        article {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        article h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #000;
+            color: #111;
+        }
+
+        aside {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            align-self: flex-start;
+        }
+
+        aside h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            text-align: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 8px;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            padding: 10px;
+            margin: 8px 0;
+            background: #f4f4f4;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        aside ul li:hover {
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            background: #111;
+            color: #f8f9fa;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: auto;
+        }
+
+
+        footer a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #aaa;
+        }
+
+        aside {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Daily News
+    </header>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">INTERNATIONAL</a>
+        <a href="#">SPORTS</a>
+        <a href="#">INDIA</a>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <h1>LATEST NEWS</h1><br>
+                <h2>URI</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias at velit adipisci
+                    assumenda esse quidem omnis cumque autem, pariatur quo in architecto repudiandae nesciunt... Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Magni repellat sequi provident, voluptates
+                    laboriosam odio ratione quaerat perferendis asperiores dolorum sed aliquid eius deleniti ipsum
+                    similique earum debitis corrupti quia?</p>
+            </article>
+            <article>
+                <h2>SHERSHAH</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quam ipsum commodi expedita
+                    quisquam tenetur? Architecto cupiditate obcaecati, sed vel laborum voluptate quas, recusandae sint
+                    inventore sit eveniet... Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora,
+                    perspiciatis deleniti odio cum nobis fugiat! Corporis eos inventore quisquam culpa laborum eum
+                    architecto dolorem, est nemo? Nobis reiciendis, alias eaque sequi, aliquid iure labore corporis
+                    expedita pariatur blanditiis debitis. Explicabo, incidunt et. Natus minus suscipit nihil dolores
+                    maxime architecto quae sapiente eum adipisci vel sed, aut tenetur veniam? A magnam suscipit maiores,
+                    quis odio fugit dolores quod, placeat repellat labore architecto ipsum repellendus adipisci impedit,
+                    laboriosam eum! Eum quidem earum beatae repellat sapiente autem excepturi voluptatibus ipsum!
+                    Asperiores inventore ullam, similique molestiae vero earum quidem corporis nostrum eius. Cupiditate,
+                    neque.</p>
+            </article>
+        </section>
+        <aside>
+            <h3>Key Players Found?</h3>
+            <ul>
+                <li>Strategists have been found</li>
+                <li>Wednesday 2025</li>
+                <li>Emily in Paris 2025</li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>Follow Us On
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Youtube</a>
+            <a href="#">Twitter</a>
+        </p>
+        <p>&copy; Daily News 2025</p>
+    </footer>
+</body>
+
+</html>
