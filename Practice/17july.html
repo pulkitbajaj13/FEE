@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    body {
+        background: #fffefe;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+    }
+
+    .search-box {
+        display: flex;
+        width: 50%;
+        max-width: 500px;
+    }
+
+    .search-box input {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-right: none;
+    }
+
+    .search-box button {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        background: #f0f0f0;
+    }
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 16px;
+    }
+    .sidebar {
+        position: fixed;
+        top: 60px; 
+        left: 0;
+        width: 200px;
+        height: calc(100% - 60px);
+        background: #fff;
+        border-right: 1px solid #ccc;
+        padding: 15px;
+    }
+
+    .sidebar ul {
+        list-style: none;
+    }
+
+    .sidebar li {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+
+    .page-content {
+        margin-top: 60px;   
+        margin-left: 200px;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">YouTube</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div class="nav-actions">
+            <span>Upload</span>
+            <span>Notifications</span>
+            <span>Profile</span>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <ul>
+            <li>Home</li>
+            <li>Trending</li>
+            <li>Subscriptions</li>
+            <li>Library</li>
+        </ul>
+    </aside>
+    <div class="page-content"> 
+    </div>
+</body>
+</html>

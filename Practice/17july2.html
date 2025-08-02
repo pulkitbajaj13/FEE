@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+    body {
+        background: #fffefe;
+        color: #000;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px 20px;
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: red;
+    }
+    .search-box {
+        display: flex;
+        width: 50%;
+        max-width: 500px;
+    }
+    .search-box input {
+        flex: 1;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-right: none;
+    }
+    .search-box button {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        background: #f0f0f0;
+    }
+    .nav-actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        font-size: 16px;
+    }
+    .nav-btn {
+        padding: 4px 8px;
+        border: 1px solid #ccc;
+        background: #fafafa;
+        font-size: 14px;
+    }
+    .sidebar {
+        position: fixed;
+        top: 60px; 
+        left: 0;
+        width: 200px;
+        height: calc(100% - 60px);
+        background: #fff;
+        border-right: 1px solid #ccc;
+        padding: 15px 0;
+        overflow-y: auto; 
+    }
+    .sidebar-section {
+        padding: 0 15px 10px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 10px;
+    }
+    .sidebar-heading {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #777;
+        margin-bottom: 8px;
+        letter-spacing: 0.5px;
+    }
+    .sidebar ul {
+        list-style: none;
+    }
+    .sidebar li {
+        padding: 8px 0;
+        font-size: 16px;
+    }
+    .page-content {
+        margin-top: 60px;   
+        margin-left: 200px;
+        padding: 20px;
+        background: #f9f9f9; 
+        min-height: calc(100vh - 60px);
+    }
+    .page-content h1 {
+        margin-bottom: 10px;
+        font-size: 28px;
+    }
+</style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">YouTube</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div class="nav-actions">
+            <button class="nav-btn">Upload</button>
+            <button class="nav-btn">Notifications</button>
+            <button class="nav-btn">Profile</button>
+        </div>
+    </header>
+    <aside class="sidebar">
+        <div class="sidebar-section">
+            <div class="sidebar-heading">Main</div>
+            <ul>
+                <li>Home</li>
+                <li>Trending</li>
+                <li>Subscriptions</li>
+            </ul>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-heading">You</div> 
+            <ul>
+                <li>Your Channel</li>
+                <li>History</li>
+                <li>Watch Later</li>
+                <li>Playlists</li>
+            </ul>
+        </div>
+        <div class="sidebar-section">
+            <div class="sidebar-heading">Explore</div>
+            <ul>
+                <li>Music</li>
+                <li>Sports</li>
+                <li>Gaming</li>
+                <li>News</li>
+            </ul>
+        </div>
+    </aside>
+    <div class="page-content">
+        <h1>Welcome!</h1>
+    </div>
+
+</body>
+</html>

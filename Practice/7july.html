@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="7jul.css" />
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form>
+        <input type="text" name="fullname" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="number" name="age" placeholder="Age"  required>
+        <input type="date" name="dob" required>
+        <input type="month" name="admission month" placeholder="Admission Month" required>
+        <input type="number" name="year of 10th pass" placeholder="10th Pass Year" required>
+        <input type="text" name="branch" placeholder="Branch" required>
+        <div class="group-label">Gender:</div>
+        <div class="radio-group">
+            <label><input type="radio" name="gender" value="Male" required>Male</label>
+            <label><input type="radio" name="gender" value="Female">Female</label>
+            <label><input type="radio" name="gender" value="Other">Other</label>
+        </div>
+         <div class="group-label">Qualification:</div>
+        <select name="qualification" required>
+            <option value="" disabled selected>Select Qualification</option>
+            <option value="10th">10th</option>
+            <option value="12th">12th</option>
+            <option value="Graduate">Graduate</option>
+            <option value="Postgraduate">Postgraduate</option>
+        </select>
+        <div class="group-label">Category:</div>
+        <select name="Category" required>
+            <option value="" disabled selected>Select Category</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+            <option value="OBC">OBC</option>
+            <option value="General">General</option>
+        </select>
+        <div class="group-label">Select Color:</div>
+        <input type="color" name="color">
+        <div class="group-label">Description:</div>
+        <div class="group-label">Select Range (0-100):</div>
+        <input type="range" name="range" min="0" max="100">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+<!-- create a form to store all the details of persone: name,password,age,dob,month of admission , year of 10th pass, gender,qualification,branch,categories-sc st general obc,select color,select a range from 0-100, submit button -->

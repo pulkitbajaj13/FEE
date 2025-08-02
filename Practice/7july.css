@@ -1,0 +1,119 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e0edfc 0%, #12247c 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+h2 {
+    margin-bottom: 24px;
+    color: #1a4474;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px rgba(25, 118, 210, 0.09);
+}
+
+form {
+    background: #fff;
+    padding: 36px 42px 28px 42px;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(25, 118, 210, 0.13), 0 1.5px 8px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+    min-width: 340px;
+    gap: 18px;
+    border: 1.5px solid #e3e9f7;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.5px solid #b6c7e3;
+    border-radius: 7px;
+    font-size: 1rem;
+    transition: border-color 0.25s, box-shadow 0.25s;
+    box-sizing: border-box;
+    background: #f8fafc;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #1976d2;
+    box-shadow: 0 0 0 2px #90caf9;
+    outline: none;
+    background: #fff;
+}
+
+.group-label {
+    font-weight: 600;
+    color: #1976d2;
+    letter-spacing: 1px;
+    font-size: 1.05rem;
+    margin-bottom: 2px;
+}
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 8px;
+}
+
+.checkbox-group label,
+.radio-group label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #444;
+    margin: 0;
+    cursor: pointer;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 6px;
+    accent-color: #1976d2;
+    transform: scale(1.13);
+    vertical-align: middle;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 70px;
+    max-height: 180px;
+    font-family: inherit;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 12px 0;
+    background: linear-gradient(90deg, #1982d2 60%, #42a5f5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 12px rgba(25, 118, 210, 0.08);
+    transition: background 0.2s, transform 0.1s;
+    letter-spacing: 1px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(90deg, #125ea2 60%, #1976d2 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+select:invalid {
+    color: #888;
+}
